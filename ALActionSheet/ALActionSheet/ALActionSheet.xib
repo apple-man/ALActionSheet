@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ALActionSheet">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBr-4V-ekz" userLabel="contentView">
+                    <rect key="frame" x="10" y="417" width="355" height="250"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWa-6Z-axr" userLabel="cancelView">
+                            <rect key="frame" x="0.0" y="175" width="355" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h2-AW-gEf" userLabel="cancleBtn">
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancleBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="z3A-kb-Sc7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="6h2-AW-gEf" firstAttribute="leading" secondItem="SWa-6Z-axr" secondAttribute="leading" id="5wl-pD-4kI"/>
+                                <constraint firstAttribute="bottom" secondItem="6h2-AW-gEf" secondAttribute="bottom" id="ZEJ-y8-Fgw"/>
+                                <constraint firstItem="6h2-AW-gEf" firstAttribute="top" secondItem="SWa-6Z-axr" secondAttribute="top" id="hUp-GU-8O0"/>
+                                <constraint firstAttribute="height" constant="60" id="ikt-6e-lpF"/>
+                                <constraint firstAttribute="trailing" secondItem="6h2-AW-gEf" secondAttribute="trailing" id="xxU-DM-yrN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbS-ox-d3f" userLabel="optionView">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="160"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kD5-pg-Eqs">
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="160"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kD5-pg-Eqs" secondAttribute="trailing" id="VbU-Bw-x6u"/>
+                                <constraint firstItem="kD5-pg-Eqs" firstAttribute="leading" secondItem="RbS-ox-d3f" secondAttribute="leading" id="W33-Pv-eC6"/>
+                                <constraint firstAttribute="bottom" secondItem="kD5-pg-Eqs" secondAttribute="bottom" id="ga6-pk-KF4"/>
+                                <constraint firstItem="kD5-pg-Eqs" firstAttribute="top" secondItem="RbS-ox-d3f" secondAttribute="top" id="vY6-TO-9Rr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="RbS-ox-d3f" firstAttribute="leading" secondItem="TBr-4V-ekz" secondAttribute="leading" id="7Nv-1Y-SDf"/>
+                        <constraint firstItem="SWa-6Z-axr" firstAttribute="leading" secondItem="TBr-4V-ekz" secondAttribute="leading" id="J1L-pE-ntM"/>
+                        <constraint firstAttribute="height" constant="250" id="Lw7-QZ-bVy"/>
+                        <constraint firstItem="RbS-ox-d3f" firstAttribute="top" secondItem="TBr-4V-ekz" secondAttribute="top" id="Uil-8J-40u"/>
+                        <constraint firstAttribute="bottom" secondItem="SWa-6Z-axr" secondAttribute="bottom" constant="15" id="Vp9-h5-oWj"/>
+                        <constraint firstItem="SWa-6Z-axr" firstAttribute="top" secondItem="RbS-ox-d3f" secondAttribute="bottom" constant="15" id="jHA-qr-khU"/>
+                        <constraint firstAttribute="trailing" secondItem="RbS-ox-d3f" secondAttribute="trailing" id="p38-eE-HVH"/>
+                        <constraint firstAttribute="trailing" secondItem="SWa-6Z-axr" secondAttribute="trailing" id="tUW-st-X8h"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4744488441780822" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TBr-4V-ekz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="L1I-gQ-YOA"/>
+                <constraint firstAttribute="trailing" secondItem="TBr-4V-ekz" secondAttribute="trailing" constant="10" id="cMI-A6-tmE"/>
+                <constraint firstAttribute="bottom" secondItem="TBr-4V-ekz" secondAttribute="bottom" id="f8Q-Ou-KgS"/>
+            </constraints>
+            <connections>
+                <outlet property="cancleBtn" destination="6h2-AW-gEf" id="3Pl-9N-quN"/>
+                <outlet property="cancleView" destination="SWa-6Z-axr" id="BaP-gf-IDD"/>
+                <outlet property="contentView" destination="TBr-4V-ekz" id="lNq-5y-goj"/>
+                <outlet property="contentViewHeightCons" destination="Lw7-QZ-bVy" id="jlf-5Q-POb"/>
+                <outlet property="optionView" destination="RbS-ox-d3f" id="WwL-tI-6a7"/>
+                <outlet property="tableView" destination="kD5-pg-Eqs" id="gzT-i8-Qhw"/>
+            </connections>
+        </view>
+    </objects>
+</document>

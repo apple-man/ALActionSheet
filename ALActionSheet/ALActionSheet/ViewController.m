@@ -7,22 +7,39 @@
 //
 
 #import "ViewController.h"
+#import "ALActionSheet.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *actionBtn;
 
 @end
 
 @implementation ViewController
 
+- (IBAction)actionBtnClicked:(UIButton *)sender {
+    
+    //[self.view addSubview:[ALActionSheet actionSheet]];
+    NSArray *optionArray = @[
+                        @"哈哈",
+                        @"呵呵",
+                        @"嘿嘿"
+                        ];
+    [ALActionSheet showActionSheetWithOptionArray:optionArray cancleStr:@"取消" click:^(NSInteger index) {
+        if (index == 1) {
+            [ALActionSheet dismiss];
+        }
+    }];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

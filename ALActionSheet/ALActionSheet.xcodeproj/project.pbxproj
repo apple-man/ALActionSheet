@@ -15,6 +15,8 @@
 		E782EB53200C8D9C0020F279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E782EB52200C8D9C0020F279 /* main.m */; };
 		E782EB5D200C8D9C0020F279 /* ALActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E782EB5C200C8D9C0020F279 /* ALActionSheetTests.m */; };
 		E782EB68200C8D9D0020F279 /* ALActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E782EB67200C8D9D0020F279 /* ALActionSheetUITests.m */; };
+		E782EB77200C8EEC0020F279 /* ALActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = E782EB76200C8EEC0020F279 /* ALActionSheet.m */; };
+		E782EB79200C8EFC0020F279 /* ALActionSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = E782EB78200C8EFC0020F279 /* ALActionSheet.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		E782EB63200C8D9D0020F279 /* ALActionSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALActionSheetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E782EB67200C8D9D0020F279 /* ALActionSheetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALActionSheetUITests.m; sourceTree = "<group>"; };
 		E782EB69200C8D9D0020F279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E782EB75200C8EEC0020F279 /* ALActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALActionSheet.h; sourceTree = "<group>"; };
+		E782EB76200C8EEC0020F279 /* ALActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALActionSheet.m; sourceTree = "<group>"; };
+		E782EB78200C8EFC0020F279 /* ALActionSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ALActionSheet.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,9 @@
 				E782EB4E200C8D9C0020F279 /* LaunchScreen.storyboard */,
 				E782EB51200C8D9C0020F279 /* Info.plist */,
 				E782EB52200C8D9C0020F279 /* main.m */,
+				E782EB75200C8EEC0020F279 /* ALActionSheet.h */,
+				E782EB76200C8EEC0020F279 /* ALActionSheet.m */,
+				E782EB78200C8EFC0020F279 /* ALActionSheet.xib */,
 			);
 			path = ALActionSheet;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 			files = (
 				E782EB50200C8D9C0020F279 /* LaunchScreen.storyboard in Resources */,
 				E782EB4D200C8D9C0020F279 /* Assets.xcassets in Resources */,
+				E782EB79200C8EFC0020F279 /* ALActionSheet.xib in Resources */,
 				E782EB4B200C8D9C0020F279 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +276,7 @@
 			files = (
 				E782EB48200C8D9C0020F279 /* ViewController.m in Sources */,
 				E782EB53200C8D9C0020F279 /* main.m in Sources */,
+				E782EB77200C8EEC0020F279 /* ALActionSheet.m in Sources */,
 				E782EB45200C8D9C0020F279 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
